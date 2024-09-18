@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Matrícula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ficha de Matrícula</h1>
+        <form>
+            <fieldset>
+                <legend>Dados do Aluno</legend>
+
+                <label for="data-matricula">Data da Matrícula:</label>
+                <input type="date" id="data-matricula" name="data-matricula">
+                
+                <label for="codigo-matricula">Código da Matrícula:</label>
+                <input type="text" id="codigo-matricula" name="codigo-matricula">
+
+                <label for="nome-aluno">Nome:</label>
+                <input type="text" id="nome-aluno" name="nome-aluno">
+
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento">
+
+                <label for="naturalidade">Naturalidade:</label>
+                <input type="text" id="naturalidade" name="naturalidade">
+
+                <label for="estado">Estado:</label>
+                <select id="uf" name="uf">
+                    <option value="">-- Selecione um estado --</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade">
+                
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf">
+
+                <label for="rg">RG:</label>
+                <input type="text" id="rg" name="rg">
+
+                <label for="orgao-exped">Órgão Expedidor:</label>
+                <input type="text" id="orgao-exped" name="orgao-exped">
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Filiação</legend>
+
+                <label for="pai">Pai:</label>
+                <input type="text" id="pai" name="pai">
+
+                <label for="telefone-pai">Telefone:</label>
+                <input type="text" id="telefone-pai" name="telefone-pai">
+
+                <label for="mae">Mãe:</label>
+                <input type="text" id="mae" name="mae">
+
+                <label for="telefone-mae">Telefone:</label>
+                <input type="text" id="telefone-mae" name="telefone-mae">
+
+                <label for="nome-responsavel">Nome do Responsável:</label>
+                <input type="text" id="nome-responsavel" name="nome-responsavel">
+
+                <label for="grau-parentesco">Grau de Parentesco:</label>
+                <input type="text" id="grau-parentesco" name="grau-parentesco">
+
+                <label for="telefone-responsavel">Telefone:</label>
+                <input type="text" id="telefone-responsavel" name="telefone-responsavel">
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua">
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro">
+
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero">
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento">
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep">
+            </fieldset>
+
+            <fieldset>
+                <legend>Ano Escolar</legend>
+                <label>
+                    <input type="checkbox" name="escolaridade" value="ed_infantil">
+                    Educação Infantil: Maternal
+                </label>
+                <label>
+                    <input type="checkbox" name="escolaridade" value="pre_escola">
+                    Pré-escola
+                </label>
+                <label>
+                    <input type="checkbox" name="escolaridade" value="ensino_fundamental">
+                    Ensino Fundamental
+                </label>
+                <label>
+                    <input type="checkbox" name="escolaridade" value="ensino_medio">
+                    Ensino Médio
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Relação de Documentos</legend>
+                <label for="qtd-documentos">Quantidade:</label>
+                <input type="number" id="qtd-documentos" name="qtd-documentos">
+                <label for="documentos">Documentos:</label>
+                <textarea id="documentos" name="documentos"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Observações</legend>
+                <textarea id="observacoes" name="observacoes"></textarea>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
